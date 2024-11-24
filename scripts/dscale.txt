@@ -1,0 +1,17 @@
+# Load the image
+load res/Manas.png manas
+
+# dscale
+
+downscale 300 400 manas manas-downscaled-1
+save res/manas-downscale-1.png manas-downscaled-1
+
+downscale 150 200 manas manas-downscaled-2
+save res/manas-downscale-2.png manas-downscaled-2
+
+downscale 150 400 manas manas-downscaled-3
+save res/manas-downscale-3.png manas-downscaled-3
+
+downscale 300 200 manas manas-downscaled-4
+save res/manas-downscale-4.png manas-downscaled-4
+

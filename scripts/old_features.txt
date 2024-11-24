@@ -1,0 +1,67 @@
+# Load the image
+load res/Manas.png manas
+
+
+# Basic color component operations
+rgb-split manas manas-red manas-green manas-blue
+save res/manas-red.png manas-red
+save res/manas-green.png manas-green
+save res/manas-blue.png manas-blue
+
+rgb-combine manas-combined manas-red manas-green manas-blue
+save res/manas-combined.png manas-combined
+
+red-component manas manas-red-component
+save res/manas-red-component.png manas-red-component
+
+green-component manas manas-green-component
+save res/manas-green-component.png manas-green-component
+
+blue-component manas manas-blue-component
+save res/manas-blue-component.png manas-blue-component
+
+# Value, Luma, and Intensity components
+value-component manas manas-value
+save res/manas-value.png manas-value
+
+luma-component manas manas-luma
+save res/manas-luma.png manas-luma
+
+intensity-component manas manas-intensity
+save res/manas-intensity.png manas-intensity
+
+# Brightness adjustments
+brighten 50 manas manas-brighter
+save res/manas-brighter.png manas-brighter
+
+brighten 1000 manas manas-brightest
+save res/manas-brightest.png manas-brightest
+
+brighten -50 manas manas-darker
+save res/manas-darker.png manas-darker
+
+brighten -1000 manas manas-darkest
+save res/manas-darkest.png manas-darkest
+
+# Flipping operations
+vertical-flip manas manas-vertical
+save res/manas-vertical.png manas-vertical
+
+horizontal-flip manas manas-horizontal
+save res/manas-horizontal.png manas-horizontal
+
+# Blur operations
+blur manas manas-blurred1
+blur manas-blurred1 manas-blurred2
+blur manas-blurred2 manas-blurred3
+blur manas-blurred3 manas-blurred4
+blur manas-blurred4 manas-blurred5
+save res/manas-blurred5.png manas-blurred5
+
+# Sharpen operations
+sharpen manas manas-sharpened1
+sharpen manas-sharpened1 manas-sharpened2
+sharpen manas-sharpened2 manas-sharpened3
+sharpen manas-sharpened3 manas-sharpened4
+sharpen manas-sharpened4 manas-sharpened5
+save res/manas-sharpened5.png manas-sharpened5

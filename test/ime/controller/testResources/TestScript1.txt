@@ -1,0 +1,44 @@
+#just load and image
+load test/ime/controller/testResources/controller_tests_image_ppm.ppm sample
+
+#split sample image into red, green, blue
+rgb-split sample sample-red sample-green sample-blue
+
+#combine them back, but by using the brightened red we get a red tint
+rgb-combine sample-red-combine sample-red sample-green sample-blue
+
+# Apply blur operations
+blur sample sample-blurred1
+
+# Apply sharpen operations
+sharpen sample sample-sharpened1
+
+#brighten original sample image
+brighten 50 sample sample-brighter
+
+#brighten original sample image by 1000
+brighten 1000 sample sample-brightest
+
+#darken original sample image
+brighten -50 sample sample-darker
+
+#darken original sample image by 1000
+brighten -1000 sample sample-darkest
+
+#sepia sample
+sepia sample sample-sepia
+
+#vertical
+vertical-flip sample sample-vertical
+
+#horizonal
+horizontal-flip sample sample-horizontal
+
+#histogram
+histogram sample sample-histogram
+
+#level adjust & split
+levels-adjust 20 100 255 sample sample-levels-adjust-split split 50
+
+#save image
+save test/ime/controller/testOutputs/controller_tests_image_ppm.ppm sample

@@ -1,0 +1,47 @@
+# Load the image
+load res/Manas.png manas
+
+# New features
+
+# Color correction
+color-correct manas manas-color-corrected
+save res/manas-color-corrected.png manas-color-corrected
+
+# Levels adjustment
+levels-adjust 20 100 255 manas manas-levels-adjusted
+save res/manas-levels-adjusted.png manas-levels-adjusted
+
+# Split view operations
+blur manas manas-blur-split split 50
+save res/manas-blur-split.png manas-blur-split
+
+sharpen manas manas-sharpen-split split 50
+save res/manas-sharpen-split.png manas-sharpen-split
+
+sepia manas manas-sepia-split split 50
+save res/manas-sepia-split.png manas-sepia-split
+
+color-correct manas manas-color-correct-split split 50
+save res/manas-color-correct-split.png manas-color-correct-split
+
+levels-adjust 20 100 255 manas manas-levels-adjust-split split 50
+save res/manas-levels-adjust-split.png manas-levels-adjust-split
+
+levels-adjust 40 60 255 manas manas-levels-adjust-split-2 split 60
+save res/manas-levels-adjust-split-2.png manas-levels-adjust-split-2
+
+# Sepia tone
+sepia manas manas-sepia
+save res/manas-sepia.png manas-sepia
+
+# Histogram
+histogram manas manas-histogram
+save res/manas-histogram.png manas-histogram
+
+#compress
+compress 60 manas manas-compress
+save res/manas-compress.png manas-compress
+
+#compress 2
+compress 40 manas manas-compress-2
+save res/manas-compress-2.png manas-compress-2
